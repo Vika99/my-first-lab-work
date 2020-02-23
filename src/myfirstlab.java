@@ -1,6 +1,6 @@
 public class myfirstlab {
     public static void main(String[] args) {
-        double x = 2, a = 1, b = 4, u = 5;
+        double x = 2, a = 1, b = 4, u = 6;
         double result;
         if (x < a) {
             if (x >= 0) {
