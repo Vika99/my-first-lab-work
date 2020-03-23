@@ -11,7 +11,7 @@ public class lab4number7 {
         System.out.println(Str +" zzz"); }
     }
 
-// где ошибка ???
+// где ошибка ? ???
 
 
 
