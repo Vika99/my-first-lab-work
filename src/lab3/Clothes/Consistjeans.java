@@ -1,8 +1,12 @@
 package lab3.Clothes;
 
-public class Priceclothes implements Price {
+public class Consistjeans implements Consist {
+    public void showconsist() {
+        System.out.println("98% cotton, 2% elastan");
+    }
+}
 
-    int a[] = new int[50];
+  /*  int a[] = new int[50];
     int price = 0;
 
     @Override
@@ -16,7 +20,6 @@ public class Priceclothes implements Price {
             price++;
             return true;
         }else
-        return false;
-    }
+        return false;*/
 
-}
+
