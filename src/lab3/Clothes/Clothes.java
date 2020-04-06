@@ -1,7 +1,7 @@
 package lab3.Clothes;
 
-public abstract class Clothes {
-    private String manufacture;
+public  class Clothes {
+    private int price;
     private String material;
     private int size;
     private String article;
@@ -12,20 +12,20 @@ public abstract class Clothes {
     } // конструктор по умолчанию
 
 
-    public Clothes(String manufacture, int size, String article, String color) {
-        this.manufacture = manufacture;
+    public Clothes(int price, int size, String article, String color) {
+        this.price = price;
         this.size = size;
         this.article = article;
         this.color = color;
 
     }
 
-    public String getManufacture() {
-        return manufacture;
+    public int getPrice() {
+        return price;
     }
 
-    public void setManufacture(String manufacture) {
-        this.manufacture = manufacture;
+    public void setPrice(int price) {
+        this.price = price;
 
     }
 
@@ -66,8 +66,8 @@ public abstract class Clothes {
         {
             return false;
         }
-        Clothes Blouse =(Clothes)o;
-        return(this.getManufacture().equals(Blouse.getManufacture()) && this.getSize()==Blouse.getSize());
+        Clothes Tshirt =(Clothes)o;
+        return(this.getPrice()==(Tshirt.getPrice()) && this.getSize()==Tshirt.getSize());
     }
 
 
@@ -80,7 +80,7 @@ public abstract class Clothes {
     @Override
     public String toString() {
         return "Clothes" +"\t"+
-                "Manufacture" +"\t"+ getManufacture() +"\t"+
+                "Manufacture" +"\t"+ getPrice() +"\t"+
                 "Size" + getSize() +"\t"+
                 "Article" + "\t"+  getArticle() +"\t"+
                 "Color" + "\t"+ getColor() +"\t"+
