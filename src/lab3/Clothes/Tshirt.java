@@ -28,6 +28,7 @@ public class Tshirt extends  Clothes {
     public void setChest(int chest) {
 
         this.chest = chest;
+
     }
     @Override
     public String toString() {

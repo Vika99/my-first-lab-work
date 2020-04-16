@@ -1,12 +1,22 @@
 package lab3.Clothes;
 
-public  class Clothes {
+public  class Clothes implements Comparable<Clothes>{
     private int price;
     private String material;
     private int size;
     private String article;
     private String color;
 
+    @Override
+    public int compareTo(Clothes o) {
+        if (price>o.getPrice()){
+            return 1;
+        }
+        if(price<o.getPrice()){
+            return -1;
+        }
+        return 0;
+    }// Это переопределение метода из interface comparable
 
     public Clothes() {
     } // конструктор по умолчанию

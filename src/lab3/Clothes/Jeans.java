@@ -5,12 +5,15 @@ import java.util.Objects;
 public class Jeans extends Clothes {
     private int waist;
 
-    public Jeans(String manufacture, int size, String article, String color) {
-        super(manufacture, size, article, color);
+    public Jeans() {
+    } // конструктор по умолчанию
+
+    public Jeans(int price, int size, String article, String color) {
+        super(price, size, article, color);
     }
 
-    public Jeans(String manufacture, int size, String article, String color, int waist) {
-        super(manufacture, size, article, color);
+    public Jeans(int price, int size, String article, String color, int waist) {
+        super(price, size, article, color);
         this.waist = waist;
 
     }
