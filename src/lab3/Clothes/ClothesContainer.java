@@ -33,15 +33,15 @@ public class ClothesContainer {
         return count;
     }
 
-  /*  public void averagePrice() {
+    public void averagePrice() {
         double average = 0;
-        if (clothes[i].getPrice() > 0) {
+        if ( newarray.getPrice() > 0) {
             double sum = 0;
-            for (int i = 0; i < clothes[i].getPrice.length; i++) {
-                sum += clothes[i].getPrice.lenght;
+            for (int i = 0; i <  newarray.getPrice(); i++) {
+                sum +=  newarray.getPrice();
             }
-            average = sum / clothes[i].getPrice.length;
-            System.out.println(average);
+            average = sum / newarray.getPrice();
+
         }
-    }*/
+    }
 }
