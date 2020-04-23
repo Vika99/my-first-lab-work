@@ -1,27 +1,30 @@
-package lab3.Clothes.MenuWithGeneric;
+package lab3.Clothes;
 
-public class AddMenuItem <T>implements MenuItem <T>{
-    private GenericContainer<T> container;
-    private Factory<T> factory;
+import java.util.Scanner;
 
-    public AddMenuItem(GenericContainer<T> container, Factory<T> factory) {
+public class AddMenuItem implements IMenuItem {
+    private Scanner sc = new Scanner(System.in);
+    private ClothesContainer container;
+    private ClothesFactory factory;
+    public AddMenuItem(ClothesContainer container, ClothesFactory factory) {
         this.container = container;
-        this.factory = factory;
+        this.factory=factory;
     }
+
 
     @Override
     public int getOrder() {
-        return 1;
+        return 2;
     }
 
     @Override
     public String getTitle() {
-        return "Add element";
+        return "Add all element";
     }
 
     @Override
     public void execute() {
         container.add(factory.create());
+
     }
 }
-

@@ -11,7 +11,7 @@ public class ComplexMenuMain {
         };
 
         IMenuItem[] array = {
-                new AddMenuItem(container),
+                new AddMenuItem(container,factory),
                 new DeleteMenuItem(container),
                 new PrintAllMenuItem(container),
                 new TopLevelMenu(innerMenu, "inner menu", 5)

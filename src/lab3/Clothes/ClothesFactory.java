@@ -1,6 +1,8 @@
 package lab3.Clothes;
+import lab3.Clothes.MenuWithGeneric.Factory;
+
 import java.util.Scanner;
-public class ClothesFactory {
+public class ClothesFactory implements Factory<Clothes> {
     private Scanner sc = new Scanner(System.in);
     public Clothes create() {
         System.out.println("1-create Tshirt");
