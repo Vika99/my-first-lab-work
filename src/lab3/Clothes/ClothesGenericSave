@@ -1,1 +1,3 @@
-Jeans{Waist=80, Clothes	Manufacture	30	Size34	Article	abcd	Color	black	} } Jeans{Waist=80, Clothes	Manufacture	20	Size34	Article	defg	Color	pink	} } Jeans{Waist=80, Clothes	Manufacture	40	Size34	Article	tyui	Color	green	} } 
+        clothesnew [0] = new Jeans(30, 34,"abcd","black",80);
+        clothesnew [1] = new Jeans(20,34,"defg","pink",80);
+        clothesnew [2] = new Jeans(40,34,"tyui","green",80);

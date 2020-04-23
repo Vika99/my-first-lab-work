@@ -34,14 +34,14 @@ public class ClothesContainer {
     }
 
     public void averagePrice() {
-        double average = 0;
-        if ( newarray.getPrice() > 0) {
+        double averagePrice = 0;
+        if ( array[10].getPrice() > 0) {
             double sum = 0;
-            for (int i = 0; i <  newarray.getPrice(); i++) {
-                sum +=  newarray.getPrice();
+            for (int i = 0; i < array[10].getPrice(); i++) {
+                sum +=  array[10].getPrice();
             }
-            average = sum / newarray.getPrice();
-
+            averagePrice = sum / array[10].getPrice();
+         System.out.println(averagePrice);
         }
     }
 }

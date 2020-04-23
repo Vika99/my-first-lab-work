@@ -1,4 +1,5 @@
 package lab3.Clothes;
+import java.io.*;
 import java.io.FileWriter;
 import java.io.BufferedWriter;
 import java.io.FileReader;
@@ -13,7 +14,8 @@ public class ClothesGenericSaveAll <T extends ClothesGenericContainer> {
         clothesnew [1] = new Jeans(20,34,"defg","pink",80);
         clothesnew [2] = new Jeans(40,34,"tyui","green",80);
 
-        try {
+
+       /* try {
             myFile = new FileWriter("C:\\Users\\laptop\\IdeaProjects\\my-first-lab-works\\src\\lab3\\Clothes\\ClothesGenericSave");
             buff = new BufferedWriter(myFile);
             for (int i=0; i < clothesnew.length; i++) {
